@@ -1,0 +1,28 @@
+{
+    "name": "i-lateral/silverstripe-call-to-action",
+    "description": "Allow creation of global 'Call To Action banners that can be rendered into templates'",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/i-lateral/silverstripe-call-to-action",
+    "keywords": [
+        "silverstripe",
+        "CTA"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "ilateral",
+        "email": "info@ilateral.co.uk"
+    }],
+    "support": {
+        "issues": "https://github.com/i-lateral/silverstripe-call-to-action/issues"
+    },
+    "require": {
+        "silverstripe/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ilateral\\SilverStripe\\CallToAction\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
