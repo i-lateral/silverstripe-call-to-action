@@ -1,0 +1,12 @@
+---
+name: calltoaction
+---
+gorriecoe\Link\Models\Link:
+    extensions:
+        - ilateral\SilverStripe\CallToAction\Extensions\LinkExtension
+SilverStripe\SiteConfig\SiteConfig:
+    extensions:
+        - ilateral\SilverStripe\CallToAction\Extensions\SiteConfigExtension
+SilverStripe\Control\Controller:
+    extensions:
+        - ilateral\SilverStripe\CallToAction\Extensions\ControllerExtension

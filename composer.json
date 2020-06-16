@@ -16,7 +16,8 @@
         "issues": "https://github.com/i-lateral/silverstripe-call-to-action/issues"
     },
     "require": {
-        "silverstripe/framework": "^4.0"
+        "silverstripe/framework": "^4.0",
+        "gorriecoe/silverstripe-linkfield": "^1.0"
     },
     "autoload": {
         "psr-4": {
