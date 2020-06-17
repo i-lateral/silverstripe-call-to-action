@@ -17,8 +17,9 @@ class CallToAction extends DataObject
         'Title' => 'Varchar',
         'ShortCode' => 'Varchar',
         'ExtraClasses' => 'Varchar',
-        'Text' => 'Varchar',
-        'LightText' => 'Boolean'
+        'Text' => 'HTMLText',
+        'LightText' => 'Boolean',
+        'LinkDivider' => 'Varchar'
     ];
 
     private static $has_many = [

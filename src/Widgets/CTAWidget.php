@@ -6,6 +6,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Widgets\Model\Widget;
 use ilateral\SilverStripe\CallToAction\Model\CallToAction;
 use NathanCox\HasOneAutocompleteField\Forms\HasOneAutocompleteField;
+use SilverStripe\Forms\DropdownField;
 
 if (!class_exists(Widget::class)) {
     return;
@@ -24,7 +25,11 @@ class CTAWidget extends Widget
     public function getCMSFields()
     {
         return new FieldList(
-            new HasOneAutocompleteField('CTA', 'Call to Action', CallToAction::class)
+            DropdownField::create(
+                'CTAID', 
+                'Call to Action', 
+                CallToAction::get()->map('ID', 'Title')
+            )->setEmptyString('choose one')
         );
     }
 }
