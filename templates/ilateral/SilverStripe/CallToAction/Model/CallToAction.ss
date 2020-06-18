@@ -1,5 +1,5 @@
 <% with $CTA %>
-    <div class="call-to-action pt-5 $ExtraClasses">
+    <div class="call-to-action py-5 $ExtraClasses">
         <div class="container text-center py-3">
             <div class="row justify-content-center mx-0">
                 <div class="col-auto pl-0 pr-1">
